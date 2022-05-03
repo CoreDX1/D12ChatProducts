@@ -16,7 +16,6 @@
         <input type="text" id="im" placeholder="Imagen">
         <input type="submit"  value="Enviar">
       </form>
-
       <table>
         <thead>
           <tr>
@@ -29,10 +28,16 @@
         </tbody>
       </table>
     </div>
-    <div class="message">
-      
-    </div>
 
+    <div class="message">
+      <h1>App Chat</h1>
+      <form onsubmit="return addChat()">
+        <input type="text" name="" id="nb" placeholder="Nombre">
+        <input type="text" name="" id="msn" placeholder="Tu mensaje">
+        <input type="submit" value="Enviar">
+      </form>
+      <div id="caja"></div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./index.js"></script>
   </body>

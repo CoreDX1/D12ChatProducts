@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div>
+      <h1>Product</h1>
+      <form onsubmit="">
+        <input type="text" id="nm" placeholder="Nombre">
+        <br>
+        <input type="text" id="pr" placeholder="Nombre">
+        <br>
+        <input type="text" id="im" placeholder="Nombre">
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="tr">Titulo</th>
+            <th class="tr">Precio</th>
+            <th class="tr">Imagen</th>
+          </tr>
+        </thead>
+        <tbody id="productsList">
+        </tbody>
+      </table>
+    </div>
+    <div class="message">
+      
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

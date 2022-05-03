@@ -19,6 +19,11 @@ const io = new Server(server)
 io.on('connection', (socket) => {
   console.log('Un usuario se conecto')
   socket.emit('mensage_back', arr)
+  //Escuchar Evento
+  socket.on('dataMsn', (data) => {
+    arr.push(data)
+    io.sockets.emit('mensage_back', arr)
+  })
 })
 
 //Rutas

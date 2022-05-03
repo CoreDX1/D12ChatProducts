@@ -24,3 +24,13 @@ const render = (data) => {
   document.querySelector('#productsList').innerHTML = html
 }
 
+const addInfo = () => {
+  let dataObj = {
+    "name": document.querySelector('#nm').value,
+    "price": document.querySelector('#pr').value,
+    "image": document.querySelector('#im').value,
+  }
+  console.log(dataObj)
+  socket.emit('dataMsn', dataObj)
+  return false
+}

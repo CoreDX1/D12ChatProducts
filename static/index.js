@@ -15,7 +15,7 @@ const render = (data) => {
     return `
       <tr>
         <th class="tr">${pr.name}</th>
-        <td class="tr">${pr.price}</td>
+        <td class="tr">$${pr.price}</td>
         <td class="tr"><img class="imagen" src="${pr.image}"></td>
       </tr>
     `

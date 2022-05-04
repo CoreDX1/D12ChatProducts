@@ -8,17 +8,25 @@
 
 body{
   height: 100vh;
+  background-color: #8FBCBB;
 }
 
 .container{
-  background-color: #8FBCBB;
   height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
 }
-
+.container .bottom{
+  border: none;
+  width: 60px;
+  height: 30px;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #88C0D0;
+}
 .container .product {
   width: 800px;
   background-color: #5E81AC;
@@ -78,9 +86,9 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: start;
-  border: 1px solid black;
   width: 100%;
   padding: 5px 0;
   border-radius: 5px;
   background-color: #D8DEE9;
+  padding: 15px;
 }
